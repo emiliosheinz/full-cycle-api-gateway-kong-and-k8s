@@ -19,3 +19,9 @@ Below are the steps to run the application locally.
 1. Have `kind` installed
 2. Have `kubectl` installed
 3. Have `helm v3` installed
+
+### Steps
+
+1. Make sure that Docker is running
+1. Run `./infra/kong-k8s/kind/kind.sh`
+1. Run `./infra/kong-k8s/kong/kong.sh`

@@ -46,10 +46,3 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 10
   targetCPUUtilizationPercentage: 70
-
-# controller:
-#   ingressClass: "kong"
-#   ingress:
-#     enabled: true
-#     annotations:
-#       konghq.com/protocols: "http"
