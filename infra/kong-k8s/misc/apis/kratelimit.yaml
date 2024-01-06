@@ -3,7 +3,7 @@ kind: KongPlugin
 metadata:
   name: rl-by-header
 config:
-  second: 10000
+  minute: 5
   limit_by: header
   policy: local
   header_name: X-Credential-Identifier

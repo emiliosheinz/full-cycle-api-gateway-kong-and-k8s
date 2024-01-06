@@ -23,5 +23,10 @@ Below are the steps to run the application locally.
 ### Steps
 
 1. Make sure that Docker is running
-1. Run `./infra/kong-k8s/kind/kind.sh`
-1. Run `./infra/kong-k8s/kong/kong.sh`
+1. Run `./infra/kong-k8s/kind/kind.sh` to create a Kubernetes cluster with `kind`
+1. Run `./infra/kong-k8s/kong/kong.sh` to install Kong in the Kubernetes cluster
+1  Run `./infra/kong-k8s/misc/keycloak/keycloak.sh` to install Keycloak in the Kubernetes cluster
+1  Run `kubectl create ns bets` to create the `bets` namespace
+1. Run `kubectl apply -f ./infra/kong-k8s/misc/apps --recursive -n bets` to install the applications in the `bets` namespace
+1. Run `kubectl apply -f ./infra/kong-k8s/misc/apis/kratelimit.yaml -n bets` to install the Kong Rate Limiting Plugin
+1. Run `kubectl apply -f ./infra/kong-k8s/misc/apis/kprometheus.yaml` to install the Kong Prometheus Plugin
