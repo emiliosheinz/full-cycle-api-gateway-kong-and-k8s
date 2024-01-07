@@ -30,3 +30,5 @@ Below are the steps to run the application locally.
 1. Run `kubectl apply -f ./infra/kong-k8s/misc/apps --recursive -n bets` to install the applications in the `bets` namespace
 1. Run `kubectl apply -f ./infra/kong-k8s/misc/apis/kratelimit.yaml -n bets` to install the Kong Rate Limiting Plugin
 1. Run `kubectl apply -f ./infra/kong-k8s/misc/apis/kprometheus.yaml` to install the Kong Prometheus Plugin
+1. RUN `kubectl apply -f './infra/kong-k8s/misc/apis/bets-api.yaml' -n bets` to install the Bets API
+1. RUN `kubectl apply -f './infra/kong-k8s/misc/apis/king.yaml' -n bets` to install the Kong Ingress Controller
