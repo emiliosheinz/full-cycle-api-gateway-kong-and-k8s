@@ -27,3 +27,14 @@ Prometheus is an open-source monitoring and alerting toolkit. It is a very popul
 API Ops creates a standardized process and collaborative culture to accelerate how your organization creates APIs and maintains them throughout their life cycle. It is a set of practices that help you to create and maintain APIs in a more efficient way by automating the process of creating and deploying APIs.
 
 ![API Ops diagram](./docs/api-ops.png)
+
+## Contract Testing
+
+Contract testing is a technique for testing an integration point by checking each application in isolation to ensure the messages it sends or receives conform to a shared understanding that is documented in a "contract". It is a way to ensure that the APIs that you are consuming will not change in a way that will break your application.
+
+To do that we are gonna use GitHub Actions, Spectral, Postman, and ArgoCD.
+
+- GitHub Actions: to run the workflow that will run the tests and build and deploy the application
+- Spectral: to validate the OpenAPI specification
+- Postman: to run the contract tests
+- ArgoCD: to apply the changes and deploy the application
