@@ -20,7 +20,7 @@ Token introspection is an OAuth 2.0 endpoint that returns the active state of a 
 
 ## Prometheus
 
-Prometheus is an open-source monitoring and alerting toolkit. It is a very popular tool in the Kubernetes ecosystem. It is used to monitor the health of the cluster and the applications running in it. It can also be used to monitor Kong for example.
+Prometheus is an open-source monitoring and alerting toolkit. It is a very popular tool in the Kubernetes ecosystem, being used to monitor the health of the cluster and the applications running in it. It can also be used to monitor Kong for example.
 
 ## API Ops
 
