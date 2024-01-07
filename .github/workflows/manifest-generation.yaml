@@ -1,4 +1,4 @@
-name: Bets API Full Cycle - Manifest Generation
+name: Manifest Generation
 
 on:
   push:
