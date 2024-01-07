@@ -14,29 +14,10 @@ Kong can be used as an Ingress Controller for Kubernetes. This means that Kong w
 
 Keycloak is an open source Identity and Access Management solution aimed at modern applications and services. It makes it easy to secure applications and services with little to no code. It provides a single sign-on solution and supports protocols like OpenID Connect, OAuth 2.0, and SAML.
 
+### Token introspection
+
+Token introspection is an OAuth 2.0 endpoint that returns the active state of a token. It is useful to verify if a token is valid or not and to get information about the token such as the user that it belongs to or its scopes.
+
 ## Prometheus
 
 Prometheus is an open-source monitoring and alerting toolkit. It is a very popular tool in the Kubernetes ecosystem. It is used to monitor the health of the cluster and the applications running in it. It can also be used to monitor Kong for example.
-
-## Running Locally
-
-Below are the steps to run the application locally.
-
-### Requirements
-
-1. Have `kind` installed
-2. Have `kubectl` installed
-3. Have `helm v3` installed
-
-### Steps
-
-1. Make sure that Docker is running
-1. Run `./infra/kong-k8s/kind/kind.sh` to create a Kubernetes cluster with `kind`
-1. Run `./infra/kong-k8s/kong/kong.sh` to install Kong in the Kubernetes cluster
-1  Run `./infra/kong-k8s/misc/keycloak/keycloak.sh` to install Keycloak in the Kubernetes cluster
-1  Run `kubectl create ns bets` to create the `bets` namespace
-1. Run `kubectl apply -f ./infra/kong-k8s/misc/apps --recursive -n bets` to install the applications in the `bets` namespace
-1. Run `kubectl apply -f ./infra/kong-k8s/misc/apis/kratelimit.yaml -n bets` to install the Kong Rate Limiting Plugin
-1. Run `kubectl apply -f ./infra/kong-k8s/misc/apis/kprometheus.yaml` to install the Kong Prometheus Plugin
-1. RUN `kubectl apply -f './infra/kong-k8s/misc/apis/bets-api.yaml' -n bets` to install the Bets API
-1. RUN `kubectl apply -f './infra/kong-k8s/misc/apis/king.yaml' -n bets` to install the Kong Ingress Controller
