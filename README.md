@@ -32,9 +32,9 @@ API Ops creates a standardized process and collaborative culture to accelerate h
 
 Contract testing is a technique for testing an integration point by checking each application in isolation to ensure the messages it sends or receives conform to a shared understanding that is documented in a "contract". It is a way to ensure that the APIs that you are consuming will not change in a way that will break your application.
 
-To do that we are gonna use GitHub Actions, Spectral, Postman, and ArgoCD.
+To do that we can use GitHub Actions, Spectral, Postman, and ArgoCD.
 
-- GitHub Actions: to run the workflow that will run the tests and build and deploy the application
-- Spectral: to validate the OpenAPI specification
-- Postman: to run the contract tests
-- ArgoCD: to apply the changes and deploy the application
+- **GitHub Actions:** to run the workflow that will run the tests and build and deploy the application
+- **Spectral:** to validate the OpenAPI specification
+- **Postman:** to run the contract tests
+- **ArgoCD:** to apply the changes and deploy the application
