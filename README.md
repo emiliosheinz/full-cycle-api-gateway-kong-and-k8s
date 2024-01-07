@@ -24,6 +24,6 @@ Prometheus is an open-source monitoring and alerting toolkit. It is a very popul
 
 ## API Ops
 
-API Ops is a set of practices that aims to improve the way we manage APIs. It is based on DevOps and SRE practices and it is focused on APIs. It is a set of practices that aims to improve the way we manage APIs.
+API Ops creates a standardized process and collaborative culture to accelerate how your organization creates APIs and maintains them throughout their life cycle. It is a set of practices that help you to create and maintain APIs in a more efficient way by automating the process of creating and deploying APIs.
 
 ![API Ops diagram](./docs/api-ops.png)
