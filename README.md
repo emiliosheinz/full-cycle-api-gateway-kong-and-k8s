@@ -21,3 +21,9 @@ Token introspection is an OAuth 2.0 endpoint that returns the active state of a 
 ## Prometheus
 
 Prometheus is an open-source monitoring and alerting toolkit. It is a very popular tool in the Kubernetes ecosystem. It is used to monitor the health of the cluster and the applications running in it. It can also be used to monitor Kong for example.
+
+## API Ops
+
+API Ops is a set of practices that aims to improve the way we manage APIs. It is based on DevOps and SRE practices and it is focused on APIs. It is a set of practices that aims to improve the way we manage APIs.
+
+![API Ops diagram](./docs/api-ops.png)
